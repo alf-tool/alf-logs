@@ -1,0 +1,23 @@
+template-info:
+  name: "alf.noe"
+  version: 0.1.0
+variables:
+  lower:
+    logs
+  upper:
+    Logs
+  version:
+    0.13.0
+  summary:
+    A connector to let Alf recognize log files.
+  description: |-
+    This projects adds the ability for Alf to recognize log files
+  authors:
+    - {name: Bernard Lambeau, email: blambeau at gmail.com}
+  links:
+    - http://github.com/blambeau/alf
+  dependencies:
+    - {name: alf,                  version: "~> 0.13.0", groups: [runtime]}
+    - {name: request-log-analyzer, version: "~> 1.12.2", groups: [runtime]}
+    - {name: rake,                 version: "~> 0.9.2",  groups: [development]}
+    - {name: rspec,                version: "~> 2.10",   groups: [development]}
