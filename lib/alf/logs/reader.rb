@@ -13,7 +13,7 @@ module Alf
       attr_reader :options
 
       def initialize(*args)
-        Alf::Tools::friendly_require('request_log_analyzer')
+        require 'request_log_analyzer'
         super
         @options[:file_format] = coerce_file_format(@options[:file_format])
       end
