@@ -4,7 +4,7 @@ describe "path attributes in log" do
   let(:db){ Alf::Database.folder(Path.dir / 'fixtures') }
     
   subject{ 
-    db.evaluate <<-EOF
+    db.query <<-EOF
       (restrict :path_attribute, lambda{ path =~ /install.txt/ })
     EOF
   }
